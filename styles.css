@@ -1,0 +1,195 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Шапка */
+header {
+    background: url('metal-background.jpg') no-repeat center center/cover;
+    color: #000; /* Чёрный цвет текста */
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff6600;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Белая тень для контраста */
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #333; /* Тёмно-серый цвет для текста */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Белая тень для контраста */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000; /* Чёрный цвет логотипа */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #000; /* Чёрный цвет ссылок */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Оранжевый цвет при наведении */
+}
+
+.btn {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e65c00;
+}
+
+/* Секции */
+section {
+    padding: 60px 0;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.features, .service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature, .service-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Цены */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Контакты */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button {
+    background: #ff6600;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e65c00;
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #ff6600;
+}
